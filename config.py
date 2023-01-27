@@ -27,4 +27,4 @@ guildid = 0
 iconurl = 'https://media.discordapp.net/attachments/1063449709412356126/1065627669548503070/7510046.png'
 
 #ссылка на канал/сообщение вашей поддержки
-supporturl = ''
+supporturl = 'https://discord.gg/TEuCA9EdmS'
