@@ -98,7 +98,7 @@ class ShopSystem(commands.Cog):
     @commands.Cog.listener("on_button_click")
     async def menu_listener(self, inter: disnake.MessageInteraction):
         if inter.component.custom_id == "bshop":
-            if inter:
+            try:
                 prods = cursor.execute("SELECT id, name, price FROM shop WHERE status = 0").fetchall()
                 embed = disnake.Embed(title='Магазин', description='Доступные товары', color=disnake.Color.from_rgb(47,49,54))
                 names = []
@@ -122,8 +122,8 @@ class ShopSystem(commands.Cog):
                             options.append(disnake.SelectOption(
                             label=prod[1], description=f"Цена: {prod[2]}₽ | Кол-во: 1", emoji='🛒'))
                 await inter.response.send_message(embed=embed, ephemeral=True, components=[disnake.ui.Select(placeholder='Выберите товар', min_values=1, max_values=1, options=options)])
-            #except:
-            #  await inter.response.send_message(embed=embed, ephemeral=True)
+            except:
+              await inter.response.send_message(embed=embed, ephemeral=True)
 
         if inter.component.custom_id == 'baddpc':
             await inter.response.send_modal(title='Добавить промокод', custom_id='addpc', components=[
