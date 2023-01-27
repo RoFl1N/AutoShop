@@ -1,6 +1,7 @@
 # AutoShop
 Автоматический магазин с пополнением через QIWI для Discord
-<br>Developed by RoFliN | [Вступай в наш Discord](https://discord.gg/5ebKxjXT2y)
+<br>Developed by RoFliN | [Вступай в наш Discord общения](https://discord.gg/5ebKxjXT2y)
+<br><b>Наш сервер поддержки в</b> [Discord](https://discord.gg/TEuCA9EdmS)
 
 ### 🖱️ Команды:
 
