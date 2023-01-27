@@ -1,0 +1,3 @@
+disnake==2.7.0
+pyQiwiP2P==2.0.6
+asyncio==3.4.3
