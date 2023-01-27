@@ -4,7 +4,7 @@ from config import token
 
 #В настройках бота на сайте включить все вкладки с INTENTS
 intents = disnake.Intents.all()
-bot = commands.Bot(command_prefix="s!", intents=intents)
+bot = commands.Bot(command_prefix="s!", intents=intents, activity=disnake.Game(name="/start в ЛС"))
 
 #список когов
 cogs = ['shop']
